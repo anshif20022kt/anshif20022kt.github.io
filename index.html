@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -16,36 +17,69 @@
 
     <title>Muhammed Anshif KT | AI & Data Portfolio</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Main CSS -->
     <link
         rel="stylesheet"
         href="style.css"
     >
+
 </head>
+
 
 <body>
 
-    <!-- ================================
+    <!-- =====================================================
          NAVIGATION
-    ================================= -->
+    ====================================================== -->
 
-    <nav class="navbar">
+    <header class="header">
 
-        <a href="#hero" class="logo">
+        <a
+            href="#home"
+            class="brand"
+            aria-label="Muhammed Anshif KT Home"
+        >
             ANSHIF<span>.</span>
         </a>
 
+
         <button
-            class="menu-button"
+            id="menuToggle"
+            class="menu-toggle"
             type="button"
             aria-label="Open navigation menu"
             aria-expanded="false"
         >
-            ☰
+            <i class="fa-solid fa-bars"></i>
         </button>
 
-        <div class="nav-links">
 
-            <a href="#hero">Home</a>
+        <nav
+            id="nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="#home">Home</a>
 
             <a href="#about">About</a>
 
@@ -59,182 +93,151 @@
 
             <a href="#certifications">Credentials</a>
 
+            <a href="#interests">Interests</a>
+
             <a href="#contact">Contact</a>
 
-        </div>
 
-    </nav>
-
-
-    <main>
-
-        <!-- ================================
-             HERO
-        ================================= -->
-
-        <section id="hero" class="hero">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">
-                    AI OPERATIONS • MACHINE LEARNING • DATA ANALYTICS
-                </p>
-
-                <h1>
-                    Muhammed
-                    <br>
-                    <span>Anshif KT</span>
-                </h1>
-
-                <p class="hero-description">
-                    Building
-                    <em>intelligent</em>
-                    data-driven solutions.
-                </p>
-
-                <p class="hero-text">
-                    MSc Data Analytics and Computational Science
-                    student working across machine learning,
-                    large language models, AI-assisted workflows,
-                    graph analytics and data-driven decision making.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="#projects"
-                        class="button primary-button"
-                    >
-                        Explore Projects
-                        <span>↓</span>
-                    </a>
-
-                    <a
-                        href="https://github.com/anshif20022kt"
-                        class="button secondary-button"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                        <span>↗</span>
-                    </a>
-
-                </div>
+            <div class="nav-socials">
 
                 <a
-                    href="#about"
-                    class="scroll-hint"
+                    href="https://github.com/anshif20022kt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
                 >
-                    Scroll to explore
-                    <span>↓</span>
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/muhammed-anshif-kt-278537292"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
 
             </div>
 
-        </section>
+        </nav>
+
+    </header>
 
 
-        <!-- ================================
-             ABOUT
-        ================================= -->
+    <main id="home">
 
-        <section id="about">
+        <!-- =================================================
+             HOME / HERO
+        ================================================== -->
 
-            <p class="section-label">
-                01 / ABOUT
-            </p>
+        <section class="hero section">
 
-            <h2>
-                About Me
-            </h2>
+            <div class="hero-number">
+                01
+            </div>
 
-            <div class="about-grid">
 
-                <div class="about-main">
+            <div class="hero-grid">
 
-                    
+                <div class="hero-main">
 
-                    <p>
-                        My work and academic interests span
-                        Machine Learning, Large Language Models,
-                        AI-assisted workflows, prompt engineering,
-                        graph analytics and data-driven
-                        decision making.
+                    <p class="label">
+                        AI OPERATIONS • MACHINE LEARNING • DATA ANALYTICS
                     </p>
 
-                    <p>
-                        I am particularly interested in
-                        Human-in-the-Loop AI, responsible AI,
-                        AI evaluation and building intelligent
-                        systems that combine analytical reasoning
-                        with practical applications.
+
+                    <h1>
+                        Muhammed
+                        <br>
+                        <span>Anshif KT</span>
+                    </h1>
+
+
+                    <p class="hero-tagline">
+                        Building
+                        <em>intelligent</em>
+                        data-driven solutions.
                     </p>
 
-                    <p>
-                        I enjoy turning complex problems into
-                        structured analytical and computational
-                        solutions.
+
+                    <p class="hero-description">
+                        MSc Data Analytics and Computational Science
+                        student working across machine learning,
+                        large language models, AI-assisted workflows,
+                        graph analytics and data-driven decision making.
                     </p>
 
-                </div>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projects"
+                            class="button primary-button"
+                        >
+                            Explore Projects
+                            <span>↓</span>
+                        </a>
 
 
-                <div class="about-details">
-
-                    <div class="detail-block">
-
-                        <p class="detail-label">
-                            CURRENT STUDIES
-                        </p>
-
-                        <p>
-                            MSc Data Analytics &
-                            Computational Science
-                        </p>
+                        <a
+                            href="https://github.com/anshif20022kt"
+                            class="button secondary-button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                            <span>↗</span>
+                        </a>
 
                     </div>
 
 
-                    <div class="detail-block">
-
-                        <p class="detail-label">
-                            CGPA
-                        </p>
-
-                        <p>
-                            7.89 / 10
-                        </p>
-
-                    </div>
+                    <a
+                        href="#about"
+                        class="scroll-hint"
+                    >
+                        Scroll to explore
+                        <span>↓</span>
+                    </a>
 
 
-                    <div class="detail-block">
+                    <!-- =================================================
+                         HERO RESUME / PROFILE CARD
+                    ================================================== -->
 
-                        <p class="detail-label">
-                            LOCATION
-                        </p>
+                    <div class="hero-resume-box">
 
-                        <p>
-                            Trivandrum, Kerala
-                        </p>
+                        <div>
 
-                    </div>
+                            <p class="detail-label">
+                                RESUME
+                            </p>
 
 
-                    <div class="detail-block">
+                            <h3>
+                                View my complete profile
+                            </h3>
 
-                        <p class="detail-label">
-                            TARGET ROLES
-                        </p>
 
-                        <p>
-                            AI Operations<br>
-                            AI Analyst<br>
-                            Data Analyst<br>
-                            Data Scientist<br>
-                            AI/ML Engineer<br>
-                            Research
-                        </p>
+                            <p>
+                                Explore my education, experience,
+                                projects and technical background.
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="assets/Anshif-KT-Resume.pdf"
+                            class="button primary-button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Resume
+                            <span>↗</span>
+                        </a>
 
                     </div>
 
@@ -245,196 +248,307 @@
         </section>
 
 
-        <!-- ================================
-             SKILLS
-        ================================= -->
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
 
-        <section id="skills">
+        <section
+            id="about"
+            class="section"
+        >
 
-            <p class="section-label">
-                02 / TOOLKIT
-            </p>
+            <div class="section-title">
 
-            <h2>
-                Technical Skills
-            </h2>
+                <p class="label">
+                    02 / PROFILE
+                </p>
+
+
+                <h2>
+                    About Me
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="profile-card">
+
+                    <div class="profile-photo-wrap">
+
+                        <img
+                            src="assets/profile-photo.png"
+                            alt="Muhammed Anshif KT"
+                            class="profile-photo"
+                        >
+
+                    </div>
+
+
+                    <p>
+                        AI • DATA • MACHINE LEARNING
+                    </p>
+
+                </div>
+
+
+                <div class="about-copy">
+
+                    <h3>
+                        Building practical and explainable
+                        intelligent systems.
+                    </h3>
+
+
+                    <p>
+                        I am an MSc Data Analytics and Computational
+                        Science student at Digital University Kerala.
+                    </p>
+
+
+                    <p>
+                        My work and academic interests span Machine
+                        Learning, Large Language Models, AI-assisted
+                        workflows, prompt engineering, graph analytics
+                        and data-driven decision making.
+                    </p>
+
+
+                    <p>
+                        I am particularly interested in
+                        Human-in-the-Loop AI, responsible AI,
+                        AI evaluation and building intelligent systems
+                        that combine analytical reasoning with
+                        practical applications.
+                    </p>
+
+
+                    <div class="facts">
+
+                        <div>
+
+                            <small>
+                                CURRENT STUDIES
+                            </small>
+
+                            <strong>
+                                MSc Data Analytics &
+                                Computational Science
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                CGPA
+                            </small>
+
+                            <strong>
+                                7.89 / 10
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                LOCATION
+                            </small>
+
+                            <strong>
+                                Trivandrum, Kerala
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                FOCUS
+                            </small>
+
+                            <strong>
+                                AI Operations, Data & ML
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TECHNICAL SKILLS
+        ================================================== -->
+
+        <section
+            id="skills"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <p class="label">
+                    03 / TOOLKIT
+                </p>
+
+
+                <h2>
+                    Technical Skills
+                </h2>
+
+            </div>
+
 
             <div class="skills-grid">
 
+                <div class="skill-card">
 
-                <article class="skill-card">
-
-                    <span class="skill-number">
-                        01
-                    </span>
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
 
                     <h3>
                         Programming
                     </h3>
 
-                    <div class="skill-tags">
+                    <p>
+                        Python, SQL, C
+                    </p>
 
-                        <span>Python</span>
+                </div>
 
-                        <span>SQL</span>
 
-                        <span>C</span>
+                <div class="skill-card">
 
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-brain"></i>
                     </div>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <span class="skill-number">
-                        02
-                    </span>
 
                     <h3>
                         Machine Learning
                     </h3>
 
-                    <div class="skill-tags">
+                    <p>
+                        Scikit-Learn, TensorFlow, PyTorch,
+                        Deep Learning, NLP
+                    </p>
 
-                        <span>Scikit-Learn</span>
+                </div>
 
-                        <span>TensorFlow</span>
 
-                        <span>PyTorch</span>
+                <div class="skill-card">
 
-                        <span>Deep Learning</span>
-
-                        <span>NLP</span>
-
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-robot"></i>
                     </div>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <span class="skill-number">
-                        03
-                    </span>
 
                     <h3>
                         AI & LLMs
                     </h3>
 
-                    <div class="skill-tags">
+                    <p>
+                        Prompt Engineering, AI Evaluation,
+                        Human-in-the-Loop AI, AI-assisted Workflows
+                    </p>
 
-                        <span>LLMs</span>
+                </div>
 
-                        <span>Prompt Engineering</span>
 
-                        <span>AI Evaluation</span>
+                <div class="skill-card">
 
-                        <span>Human-in-the-Loop AI</span>
-
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
                     </div>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <span class="skill-number">
-                        04
-                    </span>
 
                     <h3>
                         Graph Analytics
                     </h3>
 
-                    <div class="skill-tags">
+                    <p>
+                        NetworkX, Social Network Analysis,
+                        PageRank, Centrality Measures, SIR Simulation
+                    </p>
 
-                        <span>NetworkX</span>
+                </div>
 
-                        <span>Social Network Analysis</span>
 
-                        <span>PageRank</span>
+                <div class="skill-card">
 
-                        <span>Centrality</span>
-
-                        <span>SIR Simulation</span>
-
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-table"></i>
                     </div>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <span class="skill-number">
-                        05
-                    </span>
 
                     <h3>
                         Data Analysis
                     </h3>
 
-                    <div class="skill-tags">
+                    <p>
+                        Pandas, NumPy, Statistical Analysis,
+                        Feature Engineering
+                    </p>
 
-                        <span>Pandas</span>
+                </div>
 
-                        <span>NumPy</span>
 
-                        <span>Statistical Analysis</span>
+                <div class="skill-card">
 
-                        <span>Feature Engineering</span>
-
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-chart-simple"></i>
                     </div>
-
-                </article>
-
-
-                <article class="skill-card">
-
-                    <span class="skill-number">
-                        06
-                    </span>
 
                     <h3>
-                        Visualization & Tools
+                        Visualization
                     </h3>
 
-                    <div class="skill-tags">
+                    <p>
+                        Power BI, Plotly, Matplotlib,
+                        Streamlit
+                    </p>
 
-                        <span>Power BI</span>
+                </div>
 
-                        <span>Plotly</span>
 
-                        <span>Matplotlib</span>
+                <div class="skill-card">
 
-                        <span>Streamlit</span>
-
-                        <span>Git</span>
-
-                        <span>GitHub</span>
-
-                        <span>VS Code</span>
-
-                        <span>Jupyter</span>
-
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-database"></i>
                     </div>
 
-                </article>
+                    <h3>
+                        Databases
+                    </h3>
 
-            </div>
+                    <p>
+                        MySQL, PostgreSQL
+                    </p>
+
+                </div>
 
 
-            <div class="database-row">
+                <div class="skill-card">
 
-                <p class="detail-label">
-                    DATABASES
-                </p>
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
 
-                <div class="skill-tags">
+                    <h3>
+                        Developer Tools
+                    </h3>
 
-                    <span>MySQL</span>
-
-                    <span>PostgreSQL</span>
+                    <p>
+                        Git, GitHub, VS Code, Jupyter Notebook
+                    </p>
 
                 </div>
 
@@ -443,436 +557,446 @@
         </section>
 
 
-        <!-- ================================
+        <!-- =================================================
              PROJECTS
-        ================================= -->
+        ================================================== -->
 
-        <!-- ================================
-     PROJECTS
-================================= -->
+        <section
+            id="projects"
+            class="section"
+        >
 
-<section id="projects">
+            <div class="section-title">
 
-    <p class="section-label">
-        03 / SELECTED WORK
-    </p>
-
-    <h2>
-        Projects
-    </h2>
-
-    <div class="project-container">
-
-
-        <!-- =================================
-             PROJECT 01 — SAASP
-        ================================== -->
-
-        <article class="project">
-
-            <div class="project-top">
-
-                <p class="project-number">
-                    PROJECT 01
+                <p class="label">
+                    04 / SELECTED WORK
                 </p>
 
-                <span class="project-type">
-                    AI + GRAPH
-                </span>
+
+                <h2>
+                    Projects
+                </h2>
 
             </div>
 
 
-            <h3>
-                SAASP Influence Analyzer
-            </h3>
+            <div class="projects-grid">
 
 
-            <p class="project-description">
-                An AI-assisted analytics framework
-                integrating graph algorithms and
-                machine learning for influence analysis.
-            </p>
+                <!-- =================================================
+                     PROJECT 01
+                ================================================== -->
 
+                <article class="project-card">
 
-            <div class="project-impact">
-
-                <p class="project-label">
-                    PROJECT IMPACT
-                </p>
-
-                <div class="impact-metrics">
-
-                    <div class="impact-metric">
-
-                        <strong>
-                            91.5%
-                        </strong>
+                    <div class="project-top">
 
                         <span>
-                            Accuracy
+                            PROJECT 01
                         </span>
+
+                        <strong>
+                            AI + GRAPH
+                        </strong>
 
                     </div>
 
-
-                    <div class="impact-metric">
-
-                        <strong>
-                            0.877
-                        </strong>
-
-                        <span>
-                            ROC-AUC
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="project-information">
-
-                <p class="project-label">
-                    TECHNOLOGY
-                </p>
-
-                <p class="project-tools">
-                    Python • NetworkX •
-                    Streamlit • Scikit-Learn
-                </p>
-
-            </div>
-
-
-            <a
-                href="https://github.com/anshif20022kt/Influential-Node-Detection-in-Complex-Networks"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View Project
-                <span>→</span>
-            </a>
-
-        </article>
-
-
-
-        <!-- =================================
-             PROJECT 02 — SENTIMENT GRAPH
-        ================================== -->
-
-        <article class="project">
-
-            <div class="project-top">
-
-                <p class="project-number">
-                    PROJECT 02
-                </p>
-
-                <span class="project-type">
-                    GRAPH + NLP
-                </span>
-
-            </div>
-
-
-            <h3>
-                Sentiment-Aware Competitive
-                Graph Diffusion
-            </h3>
-
-
-            <p class="project-description">
-                A sentiment-aware graph diffusion
-                framework combining trust computation,
-                network analysis and temporal graph
-                learning.
-            </p>
-
-
-            <div class="project-result">
-
-                <strong>
-                    70%+
-                </strong>
-
-                <span>
-                    Prediction Accuracy
-                </span>
-
-            </div>
-
-
-            <div class="project-information">
-
-                <p class="project-label">
-                    TECHNOLOGY
-                </p>
-
-                <p class="project-tools">
-                    Python • NetworkX • TextBlob •
-                    EvolveGCN
-                </p>
-
-            </div>
-
-
-            <a
-                href="https://github.com/anshif20022kt/sentiment-aware-graph-diffusion"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View Project
-                <span>→</span>
-            </a>
-
-        </article>
-
-
-
-        <!-- =================================
-             PROJECT 03 — ECG
-        ================================== -->
-
-        <article class="project">
-
-            <div class="project-top">
-
-                <p class="project-number">
-                    PROJECT 03
-                </p>
-
-                <span class="project-type">
-                    ML + DEEP LEARNING
-                </span>
-
-            </div>
-
-
-            <h3>
-                ECG-Based Human Activity
-                Classification
-            </h3>
-
-
-            <p class="project-description">
-                Machine learning and deep learning
-                pipelines for ECG-based human activity
-                classification with automated preprocessing,
-                feature engineering and evaluation.
-            </p>
-
-
-            <div class="project-information">
-
-                <p class="project-label">
-                    TECHNOLOGY
-                </p>
-
-                <p class="project-tools">
-                    TensorFlow • Keras • Python •
-                    Random Forest • MobileNetV2
-                </p>
-
-            </div>
-
-
-            <a
-                href="https://github.com/anshif20022kt/Deep-Learning-Capstone_project"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View Project
-                <span>→</span>
-            </a>
-
-        </article>
-
-
-
-        <!-- =================================
-             PROJECT 04 — NOISE REDUCTION
-        ================================== -->
-
-        <article class="project">
-
-            <div class="project-top">
-
-                <p class="project-number">
-                    PROJECT 04
-                </p>
-
-                <span class="project-type">
-                    TIME SERIES
-                </span>
-
-            </div>
-
-
-            <h3>
-                Noise Reduction in
-                Chaotic Time Series
-            </h3>
-
-
-            <p class="project-description">
-                Applied gradient descent for nonlinear
-                signal denoising while preserving
-                attractor geometry and reducing noise.
-            </p>
-
-
-            <div class="project-information">
-
-                <p class="project-label">
-                    TECHNOLOGY
-                </p>
-
-                <p class="project-tools">
-                    Python • NumPy •
-                    Gradient Descent
-                </p>
-
-            </div>
-
-
-            <a
-                href="https://github.com/anshif20022kt/Noise-Reduction-"
-                class="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View Project
-                <span>→</span>
-            </a>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-        <!-- ================================
-             EXPERIENCE
-        ================================= -->
-
-        <section id="experience">
-
-            <p class="section-label">
-                04 / EXPERIENCE
-            </p>
-
-            <h2>
-                Professional Experience
-            </h2>
-
-
-            <div class="experience-item">
-
-
-                <div class="experience-date">
-
-                    <time>
-                        JAN 2024 — JUN 2024
-                    </time>
-
-                    <p>
-                        6 MONTHS
-                    </p>
-
-                </div>
-
-
-                <div class="experience-content">
-
-                    <p class="journey-category">
-                        SOCIAL MEDIA EXECUTIVE INTERN
-                    </p>
 
                     <h3>
-                        GREEN WORMS
+                        SAASP Influence Analyzer
                     </h3>
 
-                    <p class="experience-location">
-                        Kochi, Kerala
+
+                    <p class="project-description">
+                        An AI-assisted analytics framework integrating
+                        graph algorithms and machine learning for
+                        influence analysis and decision support.
                     </p>
 
 
-                    <p>
-                        Worked on digital marketing and
-                        social media activities while applying
-                        analytical thinking to campaign
-                        performance and audience data.
+                    <div class="project-results">
+
+                        <div>
+
+                            <strong>
+                                91.5%
+                            </strong>
+
+                            <span>
+                                ACCURACY
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                0.877
+                            </strong>
+
+                            <span>
+                                ROC-AUC
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-tech">
+
+                        <small>
+                            TECHNOLOGY
+                        </small>
+
+                        <p>
+                            Python • NetworkX • Streamlit •
+                            Scikit-Learn
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="https://github.com/anshif20022kt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Project
+                        <span>→</span>
+                    </a>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 02
+                ================================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span>
+                            PROJECT 02
+                        </span>
+
+                        <strong>
+                            GRAPH + NLP
+                        </strong>
+
+                    </div>
+
+
+                    <h3>
+                        Sentiment-Aware Competitive
+                        Graph Diffusion
+                    </h3>
+
+
+                    <p class="project-description">
+                        A sentiment-aware graph diffusion framework
+                        combining trust computation, network analysis
+                        and temporal graph learning.
                     </p>
 
 
-                    <ul class="experience-list">
+                    <div class="project-results single-result">
 
-                        <li>
-                            Analyzed campaign performance
-                            using engagement metrics and
-                            audience analytics.
-                        </li>
+                        <div>
 
-                        <li>
-                            Collaborated with cross-functional
-                            teams to improve communication
-                            workflows.
-                        </li>
+                            <strong>
+                                70%+
+                            </strong>
 
-                        <li>
-                            Prepared analytical reports and
-                            presented actionable insights.
-                        </li>
+                            <span>
+                                PREDICTION ACCURACY
+                            </span>
 
-                        <li>
-                            Managed multiple tasks while
-                            maintaining accuracy and
-                            attention to detail.
-                        </li>
+                        </div>
 
-                    </ul>
+                    </div>
 
-                </div>
+
+                    <div class="project-tech">
+
+                        <small>
+                            TECHNOLOGY
+                        </small>
+
+                        <p>
+                            Python • NetworkX • TextBlob • EvolveGCN
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="https://github.com/anshif20022kt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Project
+                        <span>→</span>
+                    </a>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 03
+                ================================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span>
+                            PROJECT 03
+                        </span>
+
+                        <strong>
+                            ML + DEEP LEARNING
+                        </strong>
+
+                    </div>
+
+
+                    <h3>
+                        ECG-Based Human Activity
+                        Classification
+                    </h3>
+
+
+                    <p class="project-description">
+                        Machine learning and deep learning pipelines
+                        for ECG-based human activity classification
+                        with automated preprocessing, feature engineering
+                        and evaluation.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <small>
+                            TECHNOLOGY
+                        </small>
+
+                        <p>
+                            TensorFlow • Keras • Python •
+                            Random Forest • MobileNetV2
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="https://github.com/anshif20022kt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Project
+                        <span>→</span>
+                    </a>
+
+                </article>
+
+
+                <!-- =================================================
+                     PROJECT 04
+                ================================================== -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span>
+                            PROJECT 04
+                        </span>
+
+                        <strong>
+                            TIME SERIES
+                        </strong>
+
+                    </div>
+
+
+                    <h3>
+                        Noise Reduction in
+                        Chaotic Time Series
+                    </h3>
+
+
+                    <p class="project-description">
+                        Applied gradient descent for nonlinear signal
+                        denoising while preserving attractor geometry
+                        and reducing noise.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <small>
+                            TECHNOLOGY
+                        </small>
+
+                        <p>
+                            Python • NumPy • Gradient Descent
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="https://github.com/anshif20022kt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View Project
+                        <span>→</span>
+                    </a>
+
+                </article>
+
 
             </div>
 
         </section>
 
 
-        <!-- ================================
+        <!-- =================================================
+             EXPERIENCE
+        ================================================== -->
+
+        <section
+            id="experience"
+            class="section"
+        >
+
+            <div class="section-title">
+
+                <p class="label">
+                    05 / EXPERIENCE
+                </p>
+
+
+                <h2>
+                    Professional Experience
+                </h2>
+
+            </div>
+
+
+            <div class="experience-list">
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+
+                        <time>
+                            JAN 2024 — JUN 2024
+                        </time>
+
+                        <p>
+                            6 MONTHS
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-content">
+
+                        <p class="journey-category">
+                            SOCIAL MEDIA EXECUTIVE INTERN
+                        </p>
+
+
+                        <h3>
+                            GREEN WORMS
+                        </h3>
+
+
+                        <p class="experience-location">
+                            Kochi, Kerala
+                        </p>
+
+
+                        <p>
+                            Worked on digital marketing and social media
+                            activities while applying analytical thinking
+                            to campaign performance and audience data.
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                Analyzed campaign performance using
+                                engagement metrics and audience analytics.
+                            </li>
+
+                            <li>
+                                Collaborated with cross-functional teams
+                                to improve communication workflows.
+                            </li>
+
+                            <li>
+                                Prepared analytical reports and presented
+                                actionable insights.
+                            </li>
+
+                            <li>
+                                Managed multiple tasks while maintaining
+                                accuracy and attention to detail.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
              EDUCATION
-        ================================= -->
+        ================================================== -->
 
-        <section id="education">
+        <section
+            id="education"
+            class="section"
+        >
 
-            <p class="section-label">
-                05 / EDUCATION
-            </p>
+            <div class="section-title">
 
-            <h2>
-                Academic Journey
-            </h2>
+                <p class="label">
+                    06 / EDUCATION
+                </p>
+
+
+                <h2>
+                    Education
+                </h2>
+
+            </div>
 
 
             <div class="education-list">
-
-
-                <!-- MSC -->
 
                 <article class="education-item">
 
                     <div class="education-date">
 
                         <time>
-                            AUG 2024 — JUN 2026
+                            2024 — PRESENT
                         </time>
 
                     </div>
@@ -880,17 +1004,21 @@
 
                     <div class="education-content">
 
-                        <p class="journey-category">
-                            MASTER'S DEGREE
-                        </p>
-
                         <h3>
-                            MSc Data Analytics &
-                            Computational Science
+                            MSc Data Analytics & Computational Science
                         </h3>
+
 
                         <p class="education-institution">
                             Digital University Kerala
+                        </p>
+
+
+                        <p class="education-coursework">
+                            Advanced study across data analytics,
+                            machine learning, computational methods,
+                            artificial intelligence and data-driven
+                            decision making.
                         </p>
 
 
@@ -911,14 +1039,12 @@
                 </article>
 
 
-                <!-- BSC -->
-
                 <article class="education-item">
 
                     <div class="education-date">
 
                         <time>
-                            OCT 2020 — MAY 2023
+                            COMPLETED
                         </time>
 
                     </div>
@@ -926,24 +1052,20 @@
 
                     <div class="education-content">
 
-                        <p class="journey-category">
-                            BACHELOR'S DEGREE
-                        </p>
-
                         <h3>
-                            BSc Physics Instrumentation
+                            Bachelor’s Degree
                         </h3>
 
+
                         <p class="education-institution">
-                            Mahatma Gandhi University
+                            Undergraduate Education
                         </p>
 
+
                         <p class="education-coursework">
-                            Relevant coursework:
-                            Python Programming,
-                            Data Analysis,
-                            Instrumentation Systems,
-                            Microprocessors
+                            Academic foundation in computing,
+                            analytical thinking and technical problem
+                            solving.
                         </p>
 
                     </div>
@@ -955,23 +1077,30 @@
         </section>
 
 
-        <!-- ================================
-             CERTIFICATIONS
-        ================================= -->
+        <!-- =================================================
+             CREDENTIALS
+        ================================================== -->
 
-        <section id="certifications">
+        <section
+            id="certifications"
+            class="section"
+        >
 
-            <p class="section-label">
-                06 / CREDENTIALS
-            </p>
+            <div class="section-title">
 
-            <h2>
-                Certifications
-            </h2>
+                <p class="label">
+                    07 / DEVELOPMENT
+                </p>
+
+
+                <h2>
+                    Credentials
+                </h2>
+
+            </div>
 
 
             <div class="certification-list">
-
 
                 <article class="certification">
 
@@ -979,135 +1108,23 @@
                         01
                     </div>
 
-                    <div class="certification-content">
-
-                        <p class="certification-status">
-                            ANTHROPIC
-                        </p>
-
-                        <h3>
-                            AI Fluency:
-                            Framework & Foundations
-                        </h3>
-
-                        <p>
-                            Human-AI collaboration,
-                            responsible AI, AI evaluation,
-                            transparency and prompt engineering.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="certification">
-
-                    <div class="certification-number">
-                        02
-                    </div>
 
                     <div class="certification-content">
 
                         <p class="certification-status">
-                            ANTHROPIC
+                            COMPLETED
                         </p>
 
-                        <h3>
-                            Claude 101
-                        </h3>
-
-                        <p>
-                            Claude fundamentals,
-                            prompt engineering,
-                            AI workflows and responsible AI usage.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="certification">
-
-                    <div class="certification-number">
-                        03
-                    </div>
-
-                    <div class="certification-content">
-
-                        <p class="certification-status">
-                            GOOGLE
-                        </p>
-
-                        <h3>
-                            Google Data Analytics
-                            Professional Certificate
-                        </h3>
-
-                    </div>
-
-                </article>
-
-
-                <article class="certification">
-
-                    <div class="certification-number">
-                        04
-                    </div>
-
-                    <div class="certification-content">
-
-                        <p class="certification-status">
-                            MACHINE LEARNING
-                        </p>
-
-                        <h3>
-                            Machine Learning and
-                            Deep Learning Specialization
-                        </h3>
-
-                    </div>
-
-                </article>
-
-
-                <article class="certification">
-
-                    <div class="certification-number">
-                        05
-                    </div>
-
-                    <div class="certification-content">
-
-                        <p class="certification-status">
-                            SQL
-                        </p>
-
-                        <h3>
-                            Advanced SQL for Data Analysis
-                        </h3>
-
-                    </div>
-
-                </article>
-
-
-                <article class="certification">
-
-                    <div class="certification-number">
-                        06
-                    </div>
-
-                    <div class="certification-content">
-
-                        <p class="certification-status">
-                            DEVELOPMENT TOOLS
-                        </p>
 
                         <h3>
                             Introduction to Git and GitHub
                         </h3>
+
+
+                        <span>
+                            Development workflow, version control
+                            and GitHub fundamentals.
+                        </span>
 
                     </div>
 
@@ -1115,8 +1132,6 @@
 
             </div>
 
-
-            <!-- RESUME -->
 
             <div class="resume-box">
 
@@ -1126,9 +1141,11 @@
                         RESUME
                     </p>
 
+
                     <h3>
                         View my complete profile
                     </h3>
+
 
                     <p>
                         Explore my education, experience,
@@ -1153,23 +1170,30 @@
         </section>
 
 
-        <!-- ================================
+        <!-- =================================================
              ACADEMIC INTERESTS
-        ================================= -->
+        ================================================== -->
 
-        <section id="interests">
+        <section
+            id="interests"
+            class="section interests-section"
+        >
 
-            <p class="section-label">
-                07 / RESEARCH
-            </p>
+            <div class="section-title">
 
-            <h2>
-                Academic Interests
-            </h2>
+                <p class="label">
+                    08 / RESEARCH
+                </p>
+
+
+                <h2>
+                    Academic Interests
+                </h2>
+
+            </div>
 
 
             <div class="interest-grid">
-
 
                 <article class="interest-card">
 
@@ -1236,8 +1260,8 @@
                     </h3>
 
                     <p>
-                        Evaluating AI-generated outputs
-                        for quality, reliability and usefulness.
+                        Evaluating AI-generated outputs for
+                        quality, reliability and usefulness.
                     </p>
 
                 </article>
@@ -1254,8 +1278,8 @@
                     </h3>
 
                     <p>
-                        Understanding and communicating
-                        how intelligent models make decisions.
+                        Understanding and communicating how
+                        intelligent models make decisions.
                     </p>
 
                 </article>
@@ -1290,8 +1314,8 @@
                     </h3>
 
                     <p>
-                        Exploring transparent and
-                        responsible approaches to AI.
+                        Exploring transparent and responsible
+                        approaches to AI.
                     </p>
 
                 </article>
@@ -1301,64 +1325,189 @@
         </section>
 
 
-        <!-- ================================
+        <!-- =================================================
+             INTEREST STATEMENT
+        ================================================== -->
+
+        <section class="section interest-statement">
+
+            <div class="interest-statement-grid">
+
+                <div>
+
+                    <p class="label">
+                        09 / INTERESTS
+                    </p>
+
+
+                    <h2>
+                        Human-in-the-Loop AI.<br>
+                        LLMs.<br>
+                        Explainable AI.<br>
+                        Graph Analytics.
+                    </h2>
+
+                </div>
+
+
+                <p>
+                    Academic interests include Human-in-the-Loop AI,
+                    Large Language Models, Prompt Engineering,
+                    AI Evaluation, Explainable AI, Graph Analytics
+                    and Responsible AI.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
              CONTACT
-        ================================= -->
+        ================================================== -->
 
-        <section id="contact">
+        <section
+            id="contact"
+            class="section contact"
+        >
 
-            <p class="section-label">
-                08 / CONTACT
-            </p>
+            <div class="contact-grid">
 
-            <h2>
-                Let's Connect
-            </h2>
+                <div>
 
-
-            <p class="contact-text">
-                Open to opportunities in AI Operations,
-                AI Analysis, Data Analytics, Data Science,
-                AI/ML Engineering and research.
-            </p>
+                    <p class="label">
+                        10 / CONTACT
+                    </p>
 
 
-            <div class="contact-links">
+                    <h2>
+                        Let’s build<br>
+                        something<br>
+                        <em>intelligent.</em>
+                    </h2>
 
 
-                <a href="mailto:anshifkt2002@gmail.com">
+                    <p class="contact-note">
+                        Available for AI Operations, AI Analyst,
+                        Data Analyst, Data Scientist, AI/ML
+                        Engineer and Research roles.
+                    </p>
 
-                    Email
-
-                    <span>↗</span>
-
-                </a>
-
-
-                <a
-                    href="https://github.com/anshif20022kt"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    GitHub
-
-                    <span>↗</span>
-
-                </a>
+                </div>
 
 
-                <a
-                    href="https://www.linkedin.com/in/muhammed-anshif-kt-278537292"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <div class="contact-links">
 
-                    LinkedIn
 
-                    <span>↗</span>
+                    <!-- EMAIL -->
 
-                </a>
+                    <a
+                        href="mailto:anshift2002@gmail.com"
+                    >
+
+                        <span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+
+
+                        <div>
+
+                            <small>
+                                Email
+                            </small>
+
+
+                            <span>
+                                anshift2002@gmail.com
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- GITHUB -->
+
+                    <a
+                        href="https://github.com/anshif20022kt"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <span>
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+
+
+                        <div>
+
+                            <small>
+                                GitHub
+                            </small>
+
+
+                            <span>
+                                github.com/anshif20022kt
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- LINKEDIN -->
+
+                    <a
+                        href="https://www.linkedin.com/in/muhammed-anshif-kt-278537292"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <span>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
+
+
+                        <div>
+
+                            <small>
+                                LinkedIn
+                            </small>
+
+
+                            <span>
+                                muhammed-anshif-kt-278537292
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- RESUME -->
+
+                    <a
+                        href="assets/Anshif-KT-Resume.pdf"
+                        class="resume-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        <span>
+                            <i class="fa-regular fa-file-pdf"></i>
+                        </span>
+
+
+                        <div>
+                            View / Download Resume
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -1367,23 +1516,25 @@
     </main>
 
 
-    <!-- ================================
+    <!-- =====================================================
          FOOTER
-    ================================= -->
+    ====================================================== -->
 
     <footer>
 
-        <p>
-            © 2026 Muhammed Anshif KT
-        </p>
+        <span>
+            © <span id="year"></span> Muhammed Anshif KT
+        </span>
 
-        <p>
-            AI • Machine Learning • Data Analytics
-        </p>
+
+        <span>
+            Data Analytics • AI • Machine Learning
+        </span>
 
     </footer>
 
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
