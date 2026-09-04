@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anshif20022kt.github.io/sitemap.xml

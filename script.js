@@ -192,4 +192,61 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     );
 
+
+    /* =====================================================
+       SCROLL REVEAL
+       Progressive enhancement: the "reveal" class (which
+       starts elements invisible) is only ever added here,
+       right before observing — so if JS fails to run,
+       nothing on the page is hidden.
+    ====================================================== */
+
+    const revealTargets = document.querySelectorAll(
+        ".section-title, " +
+        ".about-grid > *, " +
+        ".skill-card, " +
+        ".project-card, " +
+        ".experience-item, " +
+        ".education-item, " +
+        ".certification, " +
+        ".interest-card, " +
+        ".interest-statement-grid > *, " +
+        ".contact-grid > *"
+    );
+
+    if (
+        "IntersectionObserver" in window &&
+        revealTargets.length
+    ) {
+
+        revealTargets.forEach(function (el) {
+            el.classList.add("reveal");
+        });
+
+        const observer = new IntersectionObserver(
+            function (entries, obs) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "is-visible"
+                        );
+
+                        obs.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.12,
+                rootMargin: "0px 0px -40px 0px"
+            }
+        );
+
+        revealTargets.forEach(function (el) {
+            observer.observe(el);
+        });
+    }
+
 });
